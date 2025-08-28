@@ -3,6 +3,7 @@
 const pushNotification = (posTop, posRight, title, description, type) => {
   const block = document.createElement('div');
 
+  block.style.position = 'absolute';
   block.className = `notification ${type}`;
   block.style.top = posTop + 'px';
   block.style.right = posRight + 'px';
